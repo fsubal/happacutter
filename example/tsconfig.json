@@ -16,13 +16,14 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "baseUrl": "example",
+    "plugins": [
+      {
+        "name": "../../example/node_modules/happacutter/dist"
+      }
+    ]
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"],
-  "plugins": [
-    {
-      "name": "../"
-    }
-  ]
+  "include": ["**/*.ts", "**/*.tsx"]
 }
